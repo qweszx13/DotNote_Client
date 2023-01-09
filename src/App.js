@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'antd';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi. We are Dot Note
         </p>
         <a
           className="App-link"
@@ -17,6 +18,11 @@ function App() {
         >
           Learn React
         </a>
+
+        <h1 class="text-3xl font-bold underline">
+          Hello world!
+        </h1>
+        <Button type="primary">Button</Button>
       </header>
     </div>
   );
