@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
 
-        <h1 class="text-3xl font-bold underline">
+        <h1 class="text-2xl font-bold underline">
           Hello world!
         </h1>
         <Button type="primary">Button</Button>
