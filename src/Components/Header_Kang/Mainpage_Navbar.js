@@ -7,30 +7,27 @@ const Mainpage_Navbar = () => (
   
 
   <>
-    <p class="inline">
+    <div class="inline">
       DotNote
-    </p>
-    <p class="text-right inline">
-      <Menu mode="horizontal" defaultSelectedKeys={['point']}>
-      
-        <Menu.Item key="point">
-          ポイント購入
-        </Menu.Item>
-        <Menu.Item key="page1">
-          ページ1
-        </Menu.Item>
-        <Menu.Item key="page2">
-          ページ2
-        </Menu.Item>
-        <Menu.Item key="page3">
-          ページ3
-        </Menu.Item>
+    </div>
+    <div>
+      <div class="inline text-right">
+        <Menu mode="horizontal" defaultSelectedKeys={['point']}>
         
-      </Menu>
-    </p>
-    <Button>ログイン</Button>
-    <Button>会員登録</Button>
-    
+          <Menu.Item key="point">
+            ポイント購入
+          </Menu.Item>
+          
+          
+          
+          
+          <Button>ログイン</Button>
+          <Button>会員登録</Button>
+          <Button type="primary">primary</Button>
+          <Button>secondary</Button>
+        </Menu>
+      </div>
+    </div>
   </>
 
 );
