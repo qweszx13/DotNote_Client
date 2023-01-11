@@ -7,9 +7,6 @@ function Mainpage_Header() {
         <People className="inline t-1"></People>
         <p className="inline"> 最近人気あるポスト</p>
       </div>
-      // <div className="h-1/2 text-center bg-gray-50 text-gray-800 py-20 px-6 text-3xl font-bold" >
-        
-      // </div>   
     )
   }
 
