@@ -4,27 +4,24 @@ import { Button } from 'antd';
 
 const Mainpage_Navbar = () => (
 
-  
-
   <>
-    <div class="inline">
+    <div className="inline-bloc">
       DotNote
     </div>
     <div>
-      <div class="inline text-right">
+      <div className="flex flex-row-reverse">
+        <Button>ログイン</Button>
+        <Button>会員登録</Button>
         <Menu mode="horizontal" defaultSelectedKeys={['point']}>
-        
           <Menu.Item key="point">
             ポイント購入
           </Menu.Item>
-          
-          
-          
-          
-          <Button>ログイン</Button>
-          <Button>会員登録</Button>
-          <Button type="primary">primary</Button>
-          <Button>secondary</Button>
+          <Menu.Item>
+            ページ
+          </Menu.Item>
+          <Menu.Item>
+            ページ
+          </Menu.Item>
         </Menu>
       </div>
     </div>
