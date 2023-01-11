@@ -6,7 +6,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "antd": "^5.1.4",
+=======
+    "antd": "^4.24.7",
+>>>>>>> 1bd29f236387725af1aadf1adcfc9bcb9b23477b
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
