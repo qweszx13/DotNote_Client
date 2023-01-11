@@ -1,5 +1,4 @@
 import React from 'react';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { ReactComponent as AirplaneSvg} from '../../Assets/SVG/airplane.svg'
 import { ReactComponent as CultureSvg} from '../../Assets/SVG/culture.svg'
 import { ReactComponent as MapSvg} from '../../Assets/SVG/map.svg'
@@ -7,6 +6,8 @@ import { ReactComponent as OtherSvg} from '../../Assets/SVG/other.svg'
 import { ReactComponent as RamenSvg} from '../../Assets/SVG/ramen.svg'
 import { ReactComponent as TranslateSvg} from '../../Assets/SVG/translate.svg'
 import { Layout, Menu } from 'antd';
+
+import Mainpage_Header from '../Header_Choi/Mainpage_Header';
 
 function MainPage_SideMenu(){
 
@@ -37,11 +38,13 @@ function MainPage_SideMenu(){
 
   return(
     <div className='h-full'>
-      <Layout style={{height:"100%"}}>
+      <Layout style={{height:"100%",width:"100%"}}>
        
         <Layout style={{height:"20%"}}>
           <Content style={{backgroundColor:"yellow"}}>Content</Content>
-          <Header style={{backgroundColor:"green"}}>Header</Header>
+          <Header style={{backgroundColor:"green",padding:"0px"}}>
+            <Mainpage_Header></Mainpage_Header>
+          </Header>
         </Layout>
         <Layout  style={{height:"80%"}}>
           <Sider width={200}>
@@ -56,9 +59,6 @@ function MainPage_SideMenu(){
           <Content>Content</Content>
         </Layout>
       </Layout>
-      <div className='h-1/10 bg-yellow' >
-
-      </div>
     </div>
   )
 }
