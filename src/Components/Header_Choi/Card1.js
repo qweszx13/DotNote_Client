@@ -8,6 +8,7 @@ function Card1(){
     <div className="font-bold text-xl mb-2">時代はメタバースの時代！</div>
     <p className="text-gray-700 text-base">
     メタバースへようこそ！
+    dddkd
     </p>
   </div>
 </div>
