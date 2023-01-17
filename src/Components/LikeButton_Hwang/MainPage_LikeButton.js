@@ -3,7 +3,7 @@ import { useState } from "react";
 function MainPage_LikeButtonest() {
     let [title, setTitle] = useState(['떡볶이맛집']);
     let [like,setLike] = useState([0]);
-    let [flag,setFlag] = useState(false);
+    let [flag,setFlag] = useState(true);
     return(
      
         <div>
@@ -11,15 +11,15 @@ function MainPage_LikeButtonest() {
             <div className='list'>
                 <div><span onClick={()=>{
                     let copy = [...like];
-                    if(flag){
+                    if(flag == false){
                         copy[i] -= 1;        
-                    }else{
+                    }else if(flag == true){
                         copy[i] += 1;    
                     }
                     setLike(copy);
                     setFlag(!flag);
                     }}>❤</span> {like[i]} </div>
-                
+                    asdasd
 
             </div>
         )})}
