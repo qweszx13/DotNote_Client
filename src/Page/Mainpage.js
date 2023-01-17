@@ -5,9 +5,11 @@ import { ReactComponent as MapSvg} from '../Assets/SVG/map.svg'
 import { ReactComponent as OtherSvg} from '../Assets/SVG/other.svg'
 import { ReactComponent as RamenSvg} from '../Assets/SVG/ramen.svg'
 import { ReactComponent as TranslateSvg} from '../Assets/SVG/translate.svg'
-import { Layout, Menu } from 'antd';
+import { Card, Layout, Menu } from 'antd';
 
 import Mainpage_Header from "../Components/Header_Choi/Mainpage_Header";
+
+import Card1 from '../Components/Header_Choi/Card1';
 
 function Mainpage(){
 
@@ -34,7 +36,8 @@ function Mainpage(){
       };
     },
   );
-
+  
+  let dummydata = [1,2,3,4,5,6]
 
   return(
     <div className='h-full'>
@@ -56,7 +59,11 @@ function Mainpage(){
                 items={dummy}
               />
           </Sider>
-          <Content>Content</Content>
+          <Content>
+            {dummydata.map((_,index)=>{
+              return <Card1></Card1>
+            })}
+          </Content>
         </Layout>
       </Layout>
     </div>
