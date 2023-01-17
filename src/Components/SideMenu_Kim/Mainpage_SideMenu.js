@@ -7,6 +7,7 @@ import { ReactComponent as RamenSvg} from '../../Assets/SVG/ramen.svg'
 import { ReactComponent as TranslateSvg} from '../../Assets/SVG/translate.svg'
 import { Layout, Menu } from 'antd';
 
+import MainPage_LikeButton from "../LikeButton_Hwang/MainPage_LikeButton";
 import Mainpage_Header from '../Header_Choi/Mainpage_Header';
 
 function MainPage_SideMenu(){
@@ -56,7 +57,10 @@ function MainPage_SideMenu(){
                 items={dummy}
               />
           </Sider>
-          <Content>Content</Content>
+          <Content>
+            <MainPage_LikeButton></MainPage_LikeButton>
+
+          </Content>
         </Layout>
       </Layout>
     </div>
