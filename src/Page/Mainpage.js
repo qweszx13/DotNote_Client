@@ -1,15 +1,15 @@
 import React from 'react';
-import { ReactComponent as AirplaneSvg} from '../../Assets/SVG/airplane.svg'
-import { ReactComponent as CultureSvg} from '../../Assets/SVG/culture.svg'
-import { ReactComponent as MapSvg} from '../../Assets/SVG/map.svg'
-import { ReactComponent as OtherSvg} from '../../Assets/SVG/other.svg'
-import { ReactComponent as RamenSvg} from '../../Assets/SVG/ramen.svg'
-import { ReactComponent as TranslateSvg} from '../../Assets/SVG/translate.svg'
+import { ReactComponent as AirplaneSvg} from '../Assets/SVG/airplane.svg'
+import { ReactComponent as CultureSvg} from '../Assets/SVG/culture.svg'
+import { ReactComponent as MapSvg} from '../Assets/SVG/map.svg'
+import { ReactComponent as OtherSvg} from '../Assets/SVG/other.svg'
+import { ReactComponent as RamenSvg} from '../Assets/SVG/ramen.svg'
+import { ReactComponent as TranslateSvg} from '../Assets/SVG/translate.svg'
 import { Layout, Menu } from 'antd';
 
-import Mainpage_Header from '../Header_Choi/Mainpage_Header';
+import Mainpage_Header from "../Components/Header_Choi/Mainpage_Header";
 
-function MainPage_SideMenu(){
+function Mainpage(){
 
   const { Header, Content, Sider } = Layout;
 
@@ -63,4 +63,4 @@ function MainPage_SideMenu(){
   )
 }
 
-export default MainPage_SideMenu;
+export default Mainpage;

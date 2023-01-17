@@ -1,10 +1,10 @@
 import './App.css';
-import MainPage_SideMenu from "./Components/SideMenu_Kim/Mainpage_SideMenu";
+import Mainpage from './Page/Mainpage';
 
 function App() {
   return (
     <div className="h-screen w-screen">
-      <MainPage_SideMenu></MainPage_SideMenu>
+      <Mainpage></Mainpage>
     </div>
   );
 }
