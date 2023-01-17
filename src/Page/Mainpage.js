@@ -8,6 +8,7 @@ import { ReactComponent as TranslateSvg} from '../Assets/SVG/translate.svg'
 import { Layout, Menu } from 'antd';
 
 import Mainpage_Header from "../Components/Header_Choi/Mainpage_Header";
+import MainPageLoginModal from '../Components/Modal_Kim/MainPageLoginModal';
 
 function Mainpage(){
 
@@ -56,7 +57,9 @@ function Mainpage(){
                 items={dummy}
               />
           </Sider>
-          <Content>Content</Content>
+          <Content>
+            <MainPageLoginModal></MainPageLoginModal>
+          </Content>
         </Layout>
       </Layout>
     </div>
