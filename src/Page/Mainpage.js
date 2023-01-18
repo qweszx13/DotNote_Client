@@ -6,10 +6,8 @@ import { ReactComponent as OtherSvg} from '../Assets/SVG/other.svg'
 import { ReactComponent as RamenSvg} from '../Assets/SVG/ramen.svg'
 import { ReactComponent as TranslateSvg} from '../Assets/SVG/translate.svg'
 import { Card, Layout, Menu } from 'antd';
-
 import Mainpage_Header from "../Components/ChoiComponents/Mainpage_Header";
 import MainPageLoginModal from '../Components/Modal_Kim/MainPageLoginModal';
-
 import Card1 from '../Components/ChoiComponents/Mainpage_Card';
 
 function Mainpage(){

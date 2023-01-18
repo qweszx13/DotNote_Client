@@ -1,28 +1,36 @@
 import { useState } from "react";
+import EmptyHeartImg from "../../Assets/IMG/empty-heart.png";
+import HeartImg from "../../Assets/IMG/heart.png";
+import styled from "styled-components";
 
 function MainPage_LikeButtonest() {
-    let [title, setTitle] = useState(['떡볶이맛집']);
     let [like,setLike] = useState([0]);
-    let [flag,setFlag] = useState(false);
-    return(
-     
-        <div>
-        {title.map((_,i)=>{return(
-            <div className='list'>
-                <div><span onClick={()=>{
-                    let copy = [...like];
-                    if(flag){
-                        copy[i] -= 1;        
-                    }else{
-                        copy[i] += 1;    
-                    }
-                    setLike(copy);
-                    setFlag(!flag);
-                    }}>❤</span> {like[i]} </div>
-                
+    let [flag,setFlag] = useState(true);
+    
+    function buttonOnClick(){
+        let copy = [...like];
+        if(flag === false){
+            copy[0] -= 1;        
+        }else if(flag === true){
+            copy[0] += 1;    
+        }
+        setLike(copy);
+        setFlag(!flag);
+    }
 
-            </div>
-        )})}
+    const Heart = styled.img`
+    }
+    `;
+    
+    return(
+        <div className="-inlineflex justify-center flex-col text-center text-base font-bold ">
+            {like[0]} 
+            <span className="p-3 rounded-full bg-white">
+                {
+                <Heart src={flag===true?EmptyHeartImg:HeartImg} onClick={buttonOnClick} className="w-6 h-6"></Heart> 
+                }
+            </span>
+            
         </div>
     )
   }
