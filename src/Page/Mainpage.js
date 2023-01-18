@@ -1,31 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Layout,Menu } from 'antd';
+import PostPage from './PostPage';
+import MainpageHeader from "../Components/ChoiComponents/MainpageHeader";
+import MainPageNavbar from '../Components/KangComponents/MainpageNavbar';
 import { ReactComponent as AirplaneSvg} from '../Assets/SVG/airplane.svg'
 import { ReactComponent as CultureSvg} from '../Assets/SVG/culture.svg'
 import { ReactComponent as MapSvg} from '../Assets/SVG/map.svg'
 import { ReactComponent as OtherSvg} from '../Assets/SVG/other.svg'
 import { ReactComponent as RamenSvg} from '../Assets/SVG/ramen.svg'
 import { ReactComponent as TranslateSvg} from '../Assets/SVG/translate.svg'
-import { Card, Layout, Menu } from 'antd';
-import Mainpage_Header from "../Components/ChoiComponents/Mainpage_Header";
-import MainPageLoginModal from '../Components/Modal_Kim/MainPageLoginModal';
-import Card1 from '../Components/ChoiComponents/Mainpage_Card';
-import Mainpage_Navbar from '../Components/Navbar_Kang/Mainpage_Navbar';
+import SignupPage from './SignupPage';
 
 function Mainpage(){
 
-  const { Header, Content, Sider } = Layout;
-
-  const dummyLabel = ['旅行','文化','地駅','食べ物','漢字','他']
+  const { Header, Content,Sider } = Layout;
+  const [pageNumber,setPageNumber] = useState(1);
+  const dummyLabel = ['旅行','文化','地駅','食べ物','漢字','他'];
 
   const dummy= [AirplaneSvg, CultureSvg, MapSvg,RamenSvg,TranslateSvg,OtherSvg].map(
     (icon, index) => {
       const key = String(index + 1);
-  
+
       return {
         key: `sub${key}`,
         icon: React.createElement(icon),
         label: dummyLabel[index],
-  
+
         children: new Array(4).fill(null).map((_, j) => {
           const subKey = index * 4 + j + 1;
           return {
@@ -36,19 +36,16 @@ function Mainpage(){
       };
     },
   );
-  
-  let dummydata = [1,2,3,4,5,6]
-
   return(
     <div className='h-full'>
       <Layout style={{height:"100%",width:"100%"}}>
        
         <Layout style={{height:"20%"}}>
           <Content style={{backgroundColor:"yellow"}}>
-            <Mainpage_Navbar></Mainpage_Navbar>
+            <MainPageNavbar></MainPageNavbar>
             </Content>
           <Header style={{backgroundColor:"green",padding:"0px"}}>
-            <Mainpage_Header></Mainpage_Header>
+            <MainpageHeader></MainpageHeader>
           </Header>
         </Layout>
         <Layout  style={{height:"80%"}}>
@@ -61,12 +58,13 @@ function Mainpage(){
                 items={dummy}
               />
           </Sider>
-          <Content>
-            {dummydata.map((_,index)=>{
-              return <Card1></Card1>
-            })}
-          </Content>
+          {
+            pageNumber === 0
+            ?<PostPage></PostPage>
+            :<SignupPage></SignupPage>
+          }
         </Layout>
+        
       </Layout>
     </div>
   )

@@ -1,9 +1,9 @@
-import Mainpage from './Page/Mainpage';
+import MainPage from './Page/MainPage';
 
 function App() {
   return (
     <div className="h-screen w-screen">
-      <Mainpage></Mainpage>
+      <MainPage></MainPage>
     </div>
   );
 }

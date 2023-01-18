@@ -2,7 +2,7 @@ import { Menu } from 'antd';
 import React from 'react';
 import { Button } from 'antd';
 
-const Mainpage_Navbar = () => (
+const MainpageNavbar = () => (
 
   <>
     <div className="inline-bloc">
@@ -29,4 +29,4 @@ const Mainpage_Navbar = () => (
 
 );
 
-export default Mainpage_Navbar;
+export default MainpageNavbar;

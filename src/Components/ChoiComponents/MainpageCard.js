@@ -1,6 +1,6 @@
 
 
-function Card1(){
+function MainpageCard(){
     return(
 
 <div className="max-w-xs inline-block rounded overflow-hidden shadow-lg ml-12 mt-11">
@@ -15,4 +15,4 @@ function Card1(){
 )
 }
 
-export default Card1;
+export default MainpageCard;

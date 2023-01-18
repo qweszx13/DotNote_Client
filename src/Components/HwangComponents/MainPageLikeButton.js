@@ -3,7 +3,7 @@ import EmptyHeartImg from "../../Assets/IMG/empty-heart.png";
 import HeartImg from "../../Assets/IMG/heart.png";
 import styled from "styled-components";
 
-function MainPage_LikeButtonest() {
+function MainPageLikeButtonest() {
     let [like,setLike] = useState([0]);
     let [flag,setFlag] = useState(true);
     
@@ -35,4 +35,4 @@ function MainPage_LikeButtonest() {
     )
   }
 
-  export default MainPage_LikeButtonest;
+  export default MainPageLikeButtonest;

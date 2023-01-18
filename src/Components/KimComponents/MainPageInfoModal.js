@@ -3,7 +3,7 @@ import { Button, Modal } from 'antd';
 
 
 
-function Mainpage_Info_Modal(){
+function MainpageInfoModal(){
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -30,4 +30,4 @@ function Mainpage_Info_Modal(){
   );
 }
 
-export default Mainpage_Info_Modal;
+export default MainpageInfoModal;
