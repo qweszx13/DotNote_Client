@@ -9,6 +9,7 @@ import { Card, Layout, Menu } from 'antd';
 import Mainpage_Header from "../Components/ChoiComponents/Mainpage_Header";
 import MainPageLoginModal from '../Components/Modal_Kim/MainPageLoginModal';
 import Card1 from '../Components/ChoiComponents/Mainpage_Card';
+import Mainpage_Navbar from '../Components/Navbar_Kang/Mainpage_Navbar';
 
 function Mainpage(){
 
@@ -43,7 +44,9 @@ function Mainpage(){
       <Layout style={{height:"100%",width:"100%"}}>
        
         <Layout style={{height:"20%"}}>
-          <Content style={{backgroundColor:"yellow"}}>Content</Content>
+          <Content style={{backgroundColor:"yellow"}}>
+            <Mainpage_Navbar></Mainpage_Navbar>
+            </Content>
           <Header style={{backgroundColor:"green",padding:"0px"}}>
             <Mainpage_Header></Mainpage_Header>
           </Header>
