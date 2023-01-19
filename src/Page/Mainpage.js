@@ -14,7 +14,7 @@ import SignupPage from './SignupPage';
 function Mainpage(){
 
   const { Header, Content,Sider } = Layout;
-  const [pageNumber,setPageNumber] = useState(1);
+  const [pageNumber,setPageNumber] = useState(0);
   const dummyLabel = ['旅行','文化','地駅','食べ物','漢字','他'];
 
   const dummy= [AirplaneSvg, CultureSvg, MapSvg,RamenSvg,TranslateSvg,OtherSvg].map(
@@ -37,10 +37,10 @@ function Mainpage(){
     },
   );
   return(
-    <div className='h-full'>
+    <div className='h-max'>
       <Layout style={{height:"100%",width:"100%"}}>
        
-        <Layout style={{height:"20%"}}>
+        <Layout style={{height:"130px"}}>
           <Content style={{backgroundColor:"yellow"}}>
             <MainPageNavbar></MainPageNavbar>
             </Content>
